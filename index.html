@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="icon" sizes="192x192" type=image/x-icon" href="media/icons/javascript.ico">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5485bfc962.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Countries</title>
+    <style>
+        img {
+            border-radius: 15px;
+            width: 300px;
+        }
+
+        .country {
+            background-color: white;
+            color: gray;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-Shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+            margin: auto;
+            width: 330px;
+            /* height: 420px; */
+            overflow-x: hidden;
+            overflow: scroll;
+            text-align: center;
+        }
+
+        .scroll {
+            overflow-x: hidden;
+            overflow-x: scroll
+        }
+
+        #countries {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 3.5em;
+            place-items: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            img {
+                width: 100%;
+            }
+
+            .country {
+                width: 80%
+            }
+
+            #countries {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <h1>Let's Explore All Countries</h1>
+        </a>
+    </header>
+    <main>
+        <!-- <button onclick="loadBuddiesPicture()" class="btn">Load Buddies Picture</button> -->
+        <button onclick="loadCountries()" class="btn">Load Countries</button>
+        <section id="countries">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- <script src="js/json.js"></script> -->
+    <script src="js/countries.js"></script>
+</body>
+
+</html>
